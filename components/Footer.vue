@@ -28,8 +28,8 @@ export default {
   data: () => ({
     links: [
       { name: 'Home', url: '/' },
-      { name: 'Inspire', url: '/inspire' },
-      { name: 'Contact Us', url: '/' },
+      { name: 'Report', url: '/report' },
+      { name: 'Contact Us', url: '/inspire' },
     ],
   }),
 }
