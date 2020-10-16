@@ -35,6 +35,7 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     '@nuxtjs/apollo',
+    '@nuxtjs/moment',
   ],
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
@@ -42,9 +43,7 @@ export default {
 
   apollo: {
     clientConfigs: {
-      default: {
-        httpEndpoint: 'http://localhost:4000',
-      },
+      default: '~/plugins/apolloConfig.js',
     },
   },
 

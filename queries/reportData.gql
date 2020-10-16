@@ -1,0 +1,8 @@
+query ReportData {
+  reportData {
+    report(code: "68vHraFT4Kqwn3VC") {
+      title
+      startTime
+    }
+  }
+}
