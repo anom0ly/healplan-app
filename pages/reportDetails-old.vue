@@ -6,7 +6,7 @@
         <v-col cols="2"><h1>Healing Timeline</h1></v-col>
         <v-col cols="8">
           <strong>Report Title:</strong>
-          {{ reportData.report.title }} - <strong>Boss Name:</strong> Test Data
+          {{ reportData.report.title }} - <strong>Boss Name:</strong> {{ reportData.report.fights[1].encounterID }}
         </v-col>
         <v-col cols="2">
           Timestamp:
@@ -23,7 +23,6 @@
                 :headers="headers"
                 :items="abilities"
                 :single-expand="true"
-                :expanded.sync="expanded"
                 item-key="name"
                 hide-default-footer
                 show-expand
