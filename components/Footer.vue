@@ -14,12 +14,14 @@
         {{ link.name }}
       </v-btn>
     </v-row>
+    <!--
     <v-col class="text-center py-4" cols="12">
       <v-btn class="primary" depressed>
         <v-icon>mdi-copyright</v-icon> {{ new Date().getFullYear() }} -
         <strong>Heal Plan</strong>
       </v-btn>
     </v-col>
+    -->
   </v-footer>
 </template>
 

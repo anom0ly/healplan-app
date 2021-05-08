@@ -1,8 +1,15 @@
-query ReportData {
+query ReportData($reportCode: String!) {
   reportData {
-    report(code: "68vHraFT4Kqwn3VC") {
+    report(code: $reportCode) {
       title
       startTime
+      fights(killType: Kills) {
+        encounterID
+        id
+        kill
+        startTime
+        endTime
+      }
     }
   }
 }
