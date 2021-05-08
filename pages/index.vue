@@ -18,6 +18,16 @@
           <small>Like in Blizzard Soon Time</small>
         </v-card-text>
       </v-card>
+      <hr class="my-3" />
+      <v-form ref="form">
+        <v-text-field
+          v-model="reportCode"
+          lable="Report Code"
+          :rules="reportRules"
+          append-outer-icon="mdi-send"
+          @click:append-outer="submitReport"
+        ></v-text-field>
+      </v-form>
     </v-col>
   </v-row>
 </template>
@@ -28,6 +38,20 @@ import LogoBold from '~/components/LogoBold'
 export default {
   components: {
     LogoBold,
+  },
+  data() {
+    return {
+      reportCode: '',
+      reportRules: [(v) => !!v || 'Report Code is Required'],
+    }
+  },
+  methods: {
+    submitReport() {
+      if (this.$refs.form.validate()) {
+        console.log(this.reportCode)
+        this.$router.push({ path: `/reports/${this.reportCode}` })
+      }
+    },
   },
 }
 </script>
