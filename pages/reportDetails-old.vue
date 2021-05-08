@@ -6,7 +6,8 @@
         <v-col cols="2"><h1>Healing Timeline</h1></v-col>
         <v-col cols="8">
           <strong>Report Title:</strong>
-          {{ reportData.report.title }} - <strong>Boss Name:</strong> {{ reportData.report.fights[1].encounterID }}
+          {{ reportData.report.title }} - <strong>Boss Name:</strong>
+          {{ reportData.report.fights[1].encounterID }}
         </v-col>
         <v-col cols="2">
           Timestamp:

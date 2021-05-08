@@ -63,7 +63,6 @@ export default {
   created() {
     console.log(this.$route.params)
     console.log(this.userReportCode)
-
   },
 }
 </script>

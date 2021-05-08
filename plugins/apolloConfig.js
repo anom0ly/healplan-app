@@ -1,3 +1,4 @@
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export default (context) => {
   return {
     httpEndpoint: 'https://www.warcraftlogs.com/api/v2/client',

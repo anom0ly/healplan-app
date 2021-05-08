@@ -39,6 +39,12 @@ export default {
   components: {
     LogoBold,
   },
+  data() {
+    return {
+      reportCode: '',
+      reportRules: [(v) => !!v || 'Report Code is Required'],
+    }
+  },
   methods: {
     submitReport() {
       if (this.$refs.form.validate()) {
@@ -46,12 +52,6 @@ export default {
         this.$router.push({ path: `/reports/${this.reportCode}` })
       }
     },
-  },
-  data() {
-    return {
-      reportCode: '',
-      reportRules: [(v) => !!v || 'Report Code is Required'],
-    }
   },
 }
 </script>
